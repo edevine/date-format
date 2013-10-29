@@ -12,7 +12,7 @@
             a ? (date.getHours() >= 12 ? "PM" : "AM") :
             H ? zeroPad(hour, H.length) :
             k ? zeroPad(hour === 0 ? 24 : hour, k.length) :
-            K ?	zeroPad(hour > 11 ? hour - 12 : hour, K.length) :
+            K ? zeroPad(hour > 11 ? hour - 12 : hour, K.length) :
             h ? zeroPad(hour === 0 ? 12 : (hour > 12 ? hour - 12 : hour), h.length) :
             m ? zeroPad(date.getMinutes(), m.length) : 
             s ? zeroPad(date.getSeconds(), s.length) :
